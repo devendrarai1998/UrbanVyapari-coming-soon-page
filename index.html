@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome CSS -->
+    <style>
+        body {
+            background-image: url('riowallpaper.jpg'), url('lights.jpg');
+            background-position: left top, right top;
+            background-repeat: no-repeat;
+            background-size: 50% auto, 50% auto; /* Divide the screen into two equal parts */
+            color: white; /* Change the default text color to white */
+        }
+        .icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .social {
+            margin-top: 20px;
+        }
+        .social a i {
+            font-size: 40px; /* Increase the icon size to 40px */
+            margin: 0 10px;
+            color: #007BFF;
+        }
+        .message-container {
+            max-width: 500px;
+            margin: 50px auto 0; /* Add top margin of 50px */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .message {
+            clear: both;
+            margin: 10px;
+            text-align: center;
+            max-width: 80%;
+            padding: 10px;
+            position: relative;
+        }
+        .message-left {
+            color: white;
+            position: relative;
+        }
+        .message-left .message-bubble {
+            background-color: #007BFF;
+            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        .message-left .message-bubble::before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 8px 10px 8px 0;
+            border-color: transparent #007BFF transparent transparent;
+            right: 100%;
+            top: 15px;
+        }
+        .message-right {
+            color: white;
+            position: relative;
+        }
+        .message-right .message-bubble {
+            background-color: #007BFF;
+            border-radius: 10px;
+            padding: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        .message-right .message-bubble::before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 8px 0 8px 10px;
+            border-color: transparent transparent transparent #007BFF;
+            left: 100%;
+            top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <img src="logo_name.jpg" alt="Home Icon" style="width: 60px; height: 40px;"> <!-- Replace with your local icon file -->
+    </div>
+    <div class="tag">
+        #under Construction
+    </div>
+    <div class="center-text">
+        <div class="container text-center">
+            <h1>COMING SOON</h1>
+            <!-- <p>We're working on something awesome. Stay tuned!</p> -->
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100090189225268"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/uvhubs/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/uvhubs/"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social media links and icons as needed -->
+        </div>
+    </div>
+    
+    <!-- Conversation Messages (Chat Bubbles with Pointing Edges) -->
+    <div class="message-container">
+        <div class="message message-left">
+            <div class="message-bubble">
+                Hello! When will the new website be ready?
+            </div>
+        </div>
+        <div class="message message-right">
+            <div class="message-bubble">
+                We're aiming to launch it in a couple of weeks. Stay tuned!
+            </div>
+        </div>
+        <div class="message message-left">
+            <div class="message-bubble">
+                That's great news. Can't wait to see it!
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
